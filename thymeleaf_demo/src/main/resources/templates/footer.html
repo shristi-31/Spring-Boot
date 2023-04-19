@@ -1,0 +1,16 @@
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>footer template</title>
+</head>
+<body>
+<footer th:fragment="footer1(title,subtitle)">
+<div class="container">
+<h3>...this is our footer...</h3>
+<h1 th:text="${title}"></h1>
+<h2 th:text="${subtitle}">/h2>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>example of loop</h1>
+<h3>going to traverse :<span th:text="${names}"></span></h3>
+<ul>
+<li th:each="n:${names}"><span th:text="${n}"></span></li>
+</ul>
+</body>
+</html>

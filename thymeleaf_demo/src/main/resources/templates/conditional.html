@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>this is conditional example </h1>
+<h3> USER IS : <span th:text="${isActive}?'active':'not active'"></span></h3>
+<h3>-----</h3>
+<h3 th:if="${gender}=='f'">female</h3>
+<h3 th:unless="${gender}=='f'">male</h3>
+<h3>-------</h3>
+
+<div th:switch="${#lists.size(myList)}">
+<h1 th:case="'0'">this is a zero</h1>
+<h1 th:case="'1'">this is a zero</h1>
+<h1 th:case="*">more than one elements</h1>
+</div>
+
+</body>
+</html>
